@@ -2,6 +2,8 @@
 
 Built using modern technologies: Node.js, Express, MongoDB, Mongoose 😁
 
+Compatible Node version 12.x
+
 Follow steps before running the project.
 
 1. Create a config.env file and add enviroment variables as per process.env requires, example EMAIL details, have a look on the utils/email.js for proper guidence
