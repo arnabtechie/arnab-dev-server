@@ -37,7 +37,6 @@ const createSendToken = (user, statusCode, req, res) => {
 };
 
 exports.signup = catchAsync(async (req, res, next) => {
-  console.log(req.body);
   const errors = validationResult(req);
   if (!errors.isEmpty()){
     console.log(errors.array())
@@ -58,7 +57,7 @@ exports.signup = catchAsync(async (req, res, next) => {
 });
 
 exports.login = catchAsync(async (req, res, next) => {
-  console.log(req.body);
+  const errors = validationResult(req);
   if (!errors.isEmpty()){
     return next(new AppError(errors.array(), 401));
   }  
